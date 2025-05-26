@@ -4,22 +4,20 @@
 ➢ Write a Java program to remove the third element from a array list. 
 ➢ Write a Java program to search an element in a array list.*/
 package collectionExample;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListHW {
 	private ArrayList<String> ls;
-  
-    // Constructor to initialize the color list
-    public ArrayListHW() {
-        ls = new ArrayList<String>();
-    }
 
+	// Constructor to initialize the color list
+	public ArrayListHW() {
+		ls = new ArrayList<String>();
+	}
 
-	
-	public void createArray()
-	{
+	public void createArray() {
 
 		ls.add("red");
 		ls.add("violet");
@@ -29,49 +27,43 @@ public class ArrayListHW {
 		ls.add("pink");
 		System.out.println(ls);
 	}
-	public void retrieve(int index)
-	{
-		String color=ls.get(index);
-		System.out.println("colour on index no:3 is : "+index);
+
+	public void retrieve(int index) {
+		String color = ls.get(index);
+		System.out.println("colour on index no:3 is : " + color);
 	}
-	public void iterate()
-	{
+
+	public void iterate() {
 		System.out.println("iterate through all elements");
-		Iterator<String> it=ls.iterator();
-		while(it.hasNext())
-		{
+		Iterator<String> it = ls.iterator();
+		while (it.hasNext()) {
 			System.out.println(it.next());
 		}
 	}
-	public void remove(int index)
-	{
-		String r=ls.remove(index);
-		System.out.println("removing " +r+ " element from arraylist");
+
+	public void remove(int index) {
+		String r = ls.remove(index);
+		System.out.println("removing " + r + " element from arraylist");
 		System.out.println(ls);
 	}
-	public void search()
-	{
-		String search="red";
-		if(ls.contains(search))
-		{
+
+	public void search() {
+		String search = "red";
+		if (ls.contains(search)) {
 			System.out.println("red color is present");
-		}
-		else
-		{
+		} else {
 			System.out.println("red color not found");
 		}
-		
+
 	}
 
-	public static void main(String[] args)
-	{
-		ArrayListHW ah=new ArrayListHW();
-				ah.createArray();
-				ah.retrieve(1);
-				ah.iterate();
-				ah.remove(2);
-				ah.search();
-		
+	public static void main(String[] args) {
+		ArrayListHW ah = new ArrayListHW();
+		ah.createArray();
+		ah.retrieve(3);
+		ah.iterate();
+		ah.remove(2);
+		ah.search();
 
 	}
 

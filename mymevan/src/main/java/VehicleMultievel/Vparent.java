@@ -6,6 +6,7 @@ public class Vparent
 	public int year;
 	String name,engine;
 	
+	@SuppressWarnings("resource")
 	public void vehicleDetails()
 	{
 		System.out.println("Enter vehicle name");

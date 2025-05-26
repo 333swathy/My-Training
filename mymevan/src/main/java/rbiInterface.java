@@ -7,7 +7,7 @@
  // Interest rate is defined in RBI interface.
 public interface rbiInterface 
 {
-	double INTERSTRATE=7;
+	final double INTERSTRATE=7;
 	public abstract String customerName(String name);
 	public abstract void recurringDeposit(double amount,int duration);//if you dont write also it will be by default abstract
 

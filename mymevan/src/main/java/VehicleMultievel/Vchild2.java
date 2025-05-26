@@ -14,6 +14,7 @@ public class Vchild2 extends Vchild1
 		System.out.println("vehicle : " +name);
 		System.out.println("engine type : "+engine);
 		System.out.println("color : "+color);
+		System.out.println("Varient : "+varient);
 		System.out.println("insurance ended : "+year);
 		check();
 	}
@@ -23,7 +24,7 @@ public class Vchild2 extends Vchild1
 		Vchild2 vd=new Vchild2();
 		vd.vehicleDetails();
 		vd.licence();
-		//vd.check();
+		vd.check();
 		vd.color();
 		vd.display();
 	

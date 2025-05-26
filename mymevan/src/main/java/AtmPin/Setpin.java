@@ -8,8 +8,10 @@ import java.util.Scanner;
 
 public class Setpin 
 {
-	public double amount=100000;
+	private double amount=100000;
 	private int pinNumber;
+	private String customerName;
+	
 	public int getPinNumber() 
 	{
 		return pinNumber;
@@ -26,7 +28,7 @@ public class Setpin
 	{
 		this.customerName = customerName;
 	}
-	private String customerName;
+
 	
 	public void check()
 	{
